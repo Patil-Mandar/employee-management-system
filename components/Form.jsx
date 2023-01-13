@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import { BiBrush } from "react-icons/bi";
+import Success from "./Success";
 
 const formReducer = (state, event) => {
 	return {
@@ -15,6 +16,9 @@ const Form = () => {
 		if (Object.keys(formData) == 0) return console.log("Don't have any data");
 		console.log(formData);
 	};
+
+	if (Object.keys(formData).length > 0)
+		return <Success message={"Data Added"}></Success>;
 	return (
 		<form className="grid lg:grid-cols-2 w-4/6 gap-4" onSubmit={handleSubmit}>
 			<div className="input-type">
