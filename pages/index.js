@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { BiUserPlus, BiX, BiCheck } from "react-icons/bi";
 import Table from "../components/table";
+import Form from "../components/Form";
 
 export default function Home() {
 	return (
@@ -26,6 +27,9 @@ export default function Home() {
 								</span>
 							</button>
 						</div>
+					</div>
+					<div className="container mx-auto py-5">
+						<Form />
 					</div>
 					<div className="container mx-auto">
 						<Table></Table>
