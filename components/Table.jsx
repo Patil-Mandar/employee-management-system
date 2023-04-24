@@ -15,6 +15,9 @@ export default function Table() {
 	if (isLoading) return <div>Employee is Loading...</div>;
 	if (isError) return <div>Got Error {error}</div>;
 
+	console.log('data')
+	console.log(data)
+
 	return (
 		<table className="min-w-full table-auto">
 			<thead>
